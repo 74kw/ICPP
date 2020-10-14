@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9900cb6e-4c8b-4883-ab6b-8929bd7a57df}</ProjectGuid>
-    <RootNamespace>CPP01cviceni</RootNamespace>
+    <ProjectGuid>{583f472a-93b9-44f1-a7e0-d092c0813104}</ProjectGuid>
+    <RootNamespace>CPP03cviceni</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CPP_03_cviceni_Dedicnost</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,12 +140,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Car.cpp" />
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="MEMORY_CHECK.cpp" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="MoveableObject.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="StaticObject.h" />
+    <ClInclude Include="TypPrekazky.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Car.h" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="MoveableObject.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="StaticObject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

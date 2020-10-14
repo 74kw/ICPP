@@ -21,6 +21,7 @@
     <ClCompile Include="Car.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MEMORY_CHECK.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h">
