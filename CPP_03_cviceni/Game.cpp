@@ -27,7 +27,7 @@ int* Game::findIdOfStaticObjects(double xmin, double xmax, double ymin, double y
 	int* pole = new int[objectsCount];
 	for (int i = 0; i < objectsCount; i++)
 	{
-		pole[i] = NULL;
+		pole[i] = NULL; //nepoužívat ve zkoušce
 	}
 	int citacPole = 0;
 	for (int i = 0; i < objectsCount; i++)
