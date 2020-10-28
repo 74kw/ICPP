@@ -7,6 +7,7 @@
 
 class IObject {
 public:
+	virtual ~IObject() {};
 	virtual std::string ToString() const = 0;
 };
 #endif // !IOBJECT_H

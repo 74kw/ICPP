@@ -6,8 +6,10 @@
 
 class DateTime : public IComparable{
 private:
-	Date* _date;
-	Time* _time;
+	//Date* _date;
+	//Time* _time;
+	Date _date;
+	Time _time;
 public:
 	DateTime();
 	DateTime(int year, int month, int day, int hour, int minute, int second);
