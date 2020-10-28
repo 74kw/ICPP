@@ -15,14 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Person.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PhoneList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SinglyLinkedList.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoneList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
