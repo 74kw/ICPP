@@ -12,7 +12,7 @@ int main() {
 	Person* osoba2 = new Person("Karel", "724 200 100", 2);
 	Person* osoba3 = new Person("Pepa", "728 111 222", 3);
 	Person* osoba4 = new Person("David", "720 444 111", 4);
-	Person* osoba5 = new Person("Martin", "720 200 300", 5);
+	Person* osoba5 = new Person("Martin", "720 200 300", 5);	
 	list->InsertToBegin(*osoba1);
 	list->InsertToBegin(*osoba2);
 	list->InsertToBegin(*osoba3);

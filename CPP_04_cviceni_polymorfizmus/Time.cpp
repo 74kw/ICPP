@@ -30,86 +30,60 @@ int Time::GetSeconds() const
 
 std::string Time::ToString() const
 {
-    std::string s = std::to_string(this->_hours) + ":" + std::to_string(this->_minutes) + ":" + std::to_string(this->_seconds);
-    return s;
+    return std::to_string(this->_hours) + ":" + std::to_string(this->_minutes) + ":" + std::to_string(this->_seconds);
 }
-//
-//int Time::compareTo(Time* obj) const
-//{
-//	if (this->_hours > obj->_hours)
-//	{
-//		return 1;
-//	}
-//	else if (this->_hours < obj->_hours)
-//	{
-//		return -1;
-//	}
-//	else if (this->_hours == obj->_hours)
-//	{
-//		if (this->_minutes > obj->_minutes)
-//		{
-//			return 1;
-//		}
-//		else if (this->_minutes < obj->_minutes)
-//		{
-//			return -1;
-//		}
-//		else if (this->_minutes == obj->_minutes)
-//		{
-//			if (this->_seconds > obj->_seconds)
-//			{
-//				return 1;
-//			}
-//			else if (this->_seconds < obj->_seconds)
-//			{
-//				return -1;
-//			}
-//			else if (this->_seconds == obj->_seconds)
-//			{
-//				return 0;
-//			}
-//		}
-//	}
-//	
-//}
 
 int Time::compareTo(IComparable* _obj) const
 {
 	Time* obj = dynamic_cast<Time*>(_obj);
 
 	if (this->_hours > obj->_hours)
-	{
 		return 1;
-	}
-	else if (this->_hours < obj->_hours)
-	{
+	if (this->_hours < obj->_hours)
 		return -1;
-	}
-	else if (this->_hours == obj->_hours)
-	{
-		if (this->_minutes > obj->_minutes)
-		{
-			return 1;
-		}
-		else if (this->_minutes < obj->_minutes)
-		{
-			return -1;
-		}
-		else if (this->_minutes == obj->_minutes)
-		{
-			if (this->_seconds > obj->_seconds)
-			{
-				return 1;
-			}
-			else if (this->_seconds < obj->_seconds)
-			{
-				return -1;
-			}
-			else if (this->_seconds == obj->_seconds)
-			{
-				return 0;
-			}
-		}
-	}
+	if (this->_minutes > obj->_minutes)
+		return 1;
+	if (this->_minutes < obj->_minutes)
+		return -1;
+	if (this->_seconds > obj->_seconds)
+		return 1;
+	if (this->_seconds < obj->_seconds)
+		return -1;
+	return 0;
+
+	//if (this->_hours > obj->_hours)
+	//{
+	//	return 1;
+	//}
+	//else if (this->_hours < obj->_hours)
+	//{
+	//	return -1;
+	//}
+	//else if (this->_hours == obj->_hours)
+	//{
+	//	if (this->_minutes > obj->_minutes)
+	//	{
+	//		return 1;
+	//	}
+	//	else if (this->_minutes < obj->_minutes)
+	//	{
+	//		return -1;
+	//	}
+	//	else if (this->_minutes == obj->_minutes)
+	//	{
+	//		if (this->_seconds > obj->_seconds)
+	//		{
+	//			return 1;
+	//		}
+	//		else if (this->_seconds < obj->_seconds)
+	//		{
+	//			return -1;
+	//		}
+	//		else if (this->_seconds == obj->_seconds)
+	//		{
+	//			return 0;
+	//		}
+	//	}
+	//}
 	
 }
