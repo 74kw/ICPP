@@ -339,3 +339,5 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 /CPP_06_cviceni_sablony/DynamicGrowingContainer.h
+/CPP_06_cviceni_sablony/Sample01.h
+/CPP_06_cviceni_sablony/Source.cpp
