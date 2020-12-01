@@ -59,6 +59,8 @@ static void SaveBinary() {
 	
 	//open stream
 	std::ofstream outputBinary{ "binary.dat", std::ios_base::out | std::ios_base::binary };
+	if (!outputBinary)
+		throw std::runtime_error("Bad file path");
 	// write size of array
 	outputBinary.write((const char*)&pocet, sizeof(pocet));
 	for (int i = 0; i < pocet; i++)
@@ -98,6 +100,8 @@ static void LoadBinary() {
 
 	//open stream
 	std::ifstream inputBinary{ "binary.dat", std::ios_base::in | std::ios_base::binary };
+	if (!inputBinary)
+		throw std::runtime_error("Bad file path");
 	int pocet = 0;
 	// read size of array
 	inputBinary.read((char*)&pocet, sizeof(int));
